@@ -1,0 +1,541 @@
+/* ==========================================================================
+   1. Base & Global Layout Reset
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0c0c0c;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Reusable Section Headers */
+.section-title-block {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: -0.5px;
+}
+
+.sub-section-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.3px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   2. Header Navigation Area
+   ========================================================================== */
+header {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo a {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+.sports-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.sports-nav ul li a {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sports-nav ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-utility {
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-utility i {
+  margin-right: 4px;
+}
+
+.text-danger {
+  color: #cc0000;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-signin {
+  background-color: #cc0000;
+  color: #ffffff !important;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.btn-signin:hover {
+  background-color: #aa0000;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   3. Main 3-Column News Grid (image_ec0be7.jpg)
+   ========================================================================== */
+.news-grid {
+  display: grid;
+  grid-template-columns: 42% 31% 27%;
+  gap: 25px;
+}
+
+.grid-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column 1: Left Featured Stack */
+.feature-img-wrapper {
+  position: relative;
+}
+
+.img-credit {
+  display: block;
+  font-size: 10px;
+  color: #777777;
+  text-align: right;
+  margin-top: 4px;
+}
+
+.lead-headline {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 12px 0 20px 0;
+}
+
+/* Left Column Thumbnail List */
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thumb-item {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+}
+
+.thumb-item img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.thumb-item p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* Column 2: Middle Text Stack */
+.secondary-lead img {
+  width: 100%;
+  height: auto;
+}
+
+.secondary-headline {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 10px 0 15px 0;
+}
+
+.text-headlines-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-item {
+  border-top: 1px solid #eaeaea;
+  padding: 12px 0;
+}
+
+.text-item p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.col-spacer {
+  height: 15px;
+}
+
+/* Column 3: Right Stack Layout */
+.right-stack-card {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.right-stack-card:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.right-stack-card img {
+  margin-bottom: 10px;
+}
+
+.right-stack-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* Badges styling */
+.badge-analysis, .analysis-badge {
+  display: inline-block;
+  background-color: #f4f4f4;
+  color: #444444;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 2px 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
+
+.analysis-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+/* ==========================================================================
+   4. On The Go - Video Slider (image_ec0fa5.jpg)
+   ========================================================================== */
+.slider-section {
+  position: relative;
+  margin-top: 30px;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.video-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.video-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  background-color: #000;
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.video-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 12px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9) 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.video-card-overlay h3 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.video-duration {
+  color: #cccccc;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Floating Navigation Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background-color: #000000;
+  border: 1px solid #444444;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  font-size: 12px;
+}
+
+.arrow-left { left: -16px; }
+.arrow-right { right: -16px; }
+
+/* ==========================================================================
+   5. Beyond the field & In the spotlight (4-Column Layouts)
+   ========================================================================== */
+.beyond-field-section, .spotlight-section {
+  margin-top: 40px;
+}
+
+.beyond-grid, .spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.beyond-card, .spotlight-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-holder {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.beyond-card h3, .spotlight-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   6. Watch This Section (Asymmetric Video Layout from image_ec12e8.jpg)
+   ========================================================================== */
+.watch-this-section {
+  margin-top: 40px;
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 25px;
+}
+
+.video-thumb-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.video-duration-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  padding: 3px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.video-lead-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+/* Sub-Row under Big Video Asset */
+.watch-sub-thumb-item {
+  display: flex;
+  margin-top: 15px;
+  gap: 15px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+}
+
+.watch-sub-thumb-item img {
+  width: 90px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.watch-sub-thumb-item p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Right Stack Side 2x2 Grid Layout */
+.watch-right-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 15px;
+}
+
+.mini-video-card h3 {
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   7. Media Queries for Fully Fluid Layouts
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .news-grid {
+    grid-template-columns: 50% 50%;
+  }
+  .col-right {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .beyond-grid, .spotlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .video-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .video-card:nth-child(4), .video-card:nth-child(5) {
+    display: none; /* Hide overflow cards gracefully on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .sports-nav {
+    display: none; /* Mobile menu collapsed logic placeholder */
+  }
+  .news-grid, .watch-grid {
+    grid-template-columns: 1fr;
+  }
+  .col-right {
+    grid-template-columns: 1fr;
+  }
+  .watch-right-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .beyond-grid, .spotlight-grid, .video-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .video-card:nth-child(2), .video-card:nth-child(3) {
+    display: none;
+  }
+}

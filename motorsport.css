@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Motorsport Page Specific Theme Overrides
+   ========================================================================== */
+
+/* 1. Racing Theme Variables */
+:root {
+    --motorsport-accent: #e11d48;     /* High-vis racing crimson red */
+    --motorsport-dark: #1e293b;       /* Asphalt grey */
+    --motorsport-checker: #000000;    /* Finish line black */
+}
+
+/* 2. Update navigation active state for Motorsport link */
+.sports-nav a[href="motorsport.html"].active {
+    border-bottom-color: var(--motorsport-accent);
+    color: var(--motorsport-accent);
+}
+
+/* 3. Style Motorsport Page Heading with a subtle racing accent indicator */
+body:has(a[href="motorsport.html"].active) .page-title h1 {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: italic; /* Dynamic racing italic look */
+}
+
+body:has(a[href="motorsport.html"].active) .page-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 70px;
+    height: 5px;
+    background-color: var(--motorsport-accent);
+    transform: skewX(-15deg); /* Angled like a racing stripe */
+}
+
+/* 4. Live Badge Override for Motorsport (Paddock/Pit-lane Theme) */
+body:has(a[href="motorsport.html"].active) .badge-live {
+    color: #ffffff;
+    background-color: var(--motorsport-accent);
+    display: inline-block;
+    padding: 3px 8px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+}
+
+/* 5. Custom Motorsport Premium Ad Banner Layout */
+body:has(a[href="motorsport.html"].active) .ad-box {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    border-left: 5px solid var(--motorsport-accent);
+    color: #ffffff;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(225, 29, 72, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle checker pattern accent inside the ad box background */
+body:has(a[href="motorsport.html"].active) .ad-box::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0.15;
+    background-image: 
+        linear-gradient(45deg, #fff 25%, transparent 25%), 
+        linear-gradient(-45deg, #fff 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #fff 75%), 
+        linear-gradient(-45deg, transparent 75%, #fff 75%);
+    background-size: 10px 10px;
+}
+
+/* Hover style adjustment for article headlines on Motorsport page */
+body:has(a[href="motorsport.html"].active) .grid-container a:hover {
+    color: var(--motorsport-accent);
+}
