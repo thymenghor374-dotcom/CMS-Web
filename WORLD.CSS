@@ -1,4 +1,3 @@
-/* --- Core Reset & Variables --- */
 :root {
     --cnn-red: #cc0000;
     --dark-grey: #222222;
@@ -25,10 +24,42 @@ a {
     color: inherit;
 }
 
-a:hover {
-    /* color: var(--cnn-red); */
-    border-bottom:2px solid  #fffefe;
-    
+
+.back-icon{
+    font-size: 20px;
+}
+.world-page{
+    font-size: 25px;
+}
+
+.world-page:hover{
+     border-bottom:2px solid  #fffefe;
+}
+.video:hover{
+    cursor: pointer;
+}
+
+.video{
+    width: 300px;
+    display: block;
+    width: 100%;
+}
+.video-side{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+
+}
+.time{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 3px 6px;
+    font-size: 14px;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
 }
 
 /* --- Global Layout Container --- */
@@ -36,7 +67,8 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -64,7 +96,7 @@ header {
     letter-spacing: -1px;
     background-color: var(--cnn-red);
     padding: 5px 12px;
-    border-radius: 4px;
+    border-radius: 4px; 
 }
 
 nav ul {
@@ -96,6 +128,13 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.fa-solid:hover{
+    cursor: pointer;
+}
+.fa-solid:active{
+      border-bottom:2px solid  #fffefe;
 }
 
 .breaking-badge {
@@ -261,7 +300,4 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.last-section{
-    margin-left: 50px;
 }
