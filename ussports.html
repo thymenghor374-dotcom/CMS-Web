@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US Sports | IBN Sports</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
@@ -17,10 +17,8 @@
             </div>
             <nav class="sports-nav">
                 <ul>
-                    <li><a href="index.html">Football</a></li>
+                    <li><a href="football.html">Football</a></li>
                     <li><a href="tennis.html">Tennis</a></li>
-                    <li><a href="golf.html">Golf</a></li>
-                    <li><a href="motorsport.html">Motorsport</a></li>
                     <li><a href="ussports.html" class="active">US Sports</a></li>
                     <li><a href="olympics.html">Olympics</a></li>
                 </ul>
@@ -33,42 +31,197 @@
             </div>
         </div>
     </header>
-    <main class="container main-layout">
-        <div class="page-title">
+    <main class="dashboard-container">
+        
+        <header class="main-header">
             <h1>US Sports</h1>
-        </div>
-        <div class="grid-container">
-            <section class="col-main">
-                <article class="hero-story">
-                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800" alt="Basketball">
-                    <h2><a href="#">Championship Finals: Buzzer-beater shot clinches historic title victory in Game
-                            7</a></h2>
-                </article>
-                <hr class="divider">
-                <div class="live-updates">
-                    <article class="update-item">
-                        <img src="https://images.unsplash.com/photo-1562088287-bde35a1ea917?w=400" alt="Baseball">
-                        <div class="update-text"><span class="badge-live">Live</span>
-                            <h3><a href="#">Home run streak continues as league leaders dominate the diamond</a></h3>
-                        </div>
-                    </article>
+        </header>
+
+        <section class="top-hero-grid">
+            <article class="feature-card main-story">
+                <div class="image-wrapper ratio-16-9">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuOpdXr3whSKq5-wWj3vOi0B2jMCrMEX3KVpAiPT1FqA&s=10" alt="">
                 </div>
-            </section>
-            <section class="col-secondary">
-                <article class="sub-story">
-                    <img src="https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?w=600" alt="Football helmet">
-                    <h3><a href="#">Trade Deadline: Breaking down the massive roster updates across the conference</a>
-                    </h3>
-                </article>
-            </section>
-            <aside class="col-sidebar">
-                <div class="ad-container">
-                    <div class="ad-box">
-                        <div class="ad-label">Fantasy League Pass Entry</div>
+                <h3>Championship Finals: Buzzer-beater shot clinches historic title victory in Game 7</h3>
+                
+                <hr class="card-divider">
+                
+                <div class="sub-story-live">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSslALZ2zi4a9UTSEni3zan5yKqop-xmtRHOCYvvAlnBg&s=10" alt="">
+                    <div>
+                        <span class="live-badge">LIVE</span>
+                        <p>Home run streak continues as league leaders dominate the diamond</p>
                     </div>
                 </div>
+            </article>
+
+            <article class="feature-card tall-story">
+                <div class="image-wrapper ratio-vertical">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu_NuWkwt5M90la4hBm1g6PodV4hboMV4UeMA0SaSLcQ&s=10" alt="">
+                </div>
+                <h3>Trade Deadline: Breaking down the massive roster updates across the conference</h3>
+            </article>
+
+            <div class="fantasy-widget">
+                <div class="fantasy-box">
+                    <p>Fantasy League Pass Entry</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-news-split">
+            <div class="left-news-column">
+                <article class="primary-headline-block">
+                    <div class="image-wrapper ratio-16-9">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-hyV_8vfPPZsX9kxf-_T9dSH6Syj8MSeX83ieJiLIA&s=10" alt="">
+                        <span class="img-credit">Gary A. Vasquez/Imagn Images/Reuters</span>
+                    </div>
+                    <h2>LeBron James will leave the Lakers and hit the free agent market</h2>
+                </article>
+
+                <div class="horizontal-stories-list">
+                    <div class="list-row"> 
+                        <class="row-thumb">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStNl3bZFrkN_mbG9mNiVvezmboy0ZLloudR-W2NQ0fYA&s=10" alt="">
+                        <p>Former NFL running back Chris Johnson, known as CJ2K for his 2,000 yards for Titans in '09, reveals he has ALS</p>
+                    </div>
+                    <hr class="row-divider">
+                    <div class="list-row">
+                        <class="row-thumb">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2xmIE8IgqWldwhVN2N_1DwkYF77rd9onkbM5J0AEYA&s=10" alt="">
+                        <p>Former NBA players Malik Beasley and Ed Davis among 6 charged in expanding federal probe of betting on games</p>
+                    </div>
+                    <hr class="row-divider">
+                    <div class="list-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6RE616n2fzqkSUXwoh2AGnnw3gQ46pd_2h62lQoSHw&s" alt="">
+                        <p>Detroit Lions player Terrion Arnold charged with directing attack against 3 people in Florida</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="right-sidebar-column">
+                <div class="ad-container">
+                    <span class="ad-label">Advertisement</span>
+                    <div class="mock-ad-banner">
+                        <p class="ad-title">Lessons for Life</p>
+                        <p class="ad-subtext">ផ្សព្វផ្សាយពាណិជ្ជកម្ម</p>
+                        <button class="ad-action-btn">Watch Now</button>
+                    </div>
+                    <span class="ad-feedback">Ad Feedback</span>
+                </div>
+
+                <div class="sidebar-stream">
+                    <div class="sidebar-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJKoqObURpJqvhyyEVbXXhmYBPiztNYTJ4jjPBLvfmg&s=10" alt="">
+                        <p>Knicks parade to be secured by a record number of NYPD officers</p>
+                    </div>
+                    <div class="sidebar-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGj4JjPV_txb5zB5URR7spj1VYYa7U0F9WxgKqAzleVQ&s=10" alt="">
+                        <p>Knicks' Game 5 victory set an NBA ratings record dating back to the 1990s</p>
+                    </div>
+                    <div class="sidebar-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeNqnXWJlX4FDhGZCi8MOGXd35F03GDJIcgnzmbi33A&s=10" alt="">
+                        <p>Sorsby looks to NFL after legal fight with NCAA over his eligibility for gambling</p>
+                    </div>
+                    <div class="sidebar-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNKA7OYm0oLVaUwbLiazI0SaYWzPcn7reOz723-vOyGg&s=10" alt="">
+                        <p>Jay Wright molded Jalen Brunson and the Nova Knicks. In their moment of glory, he was watching – on his phone, from his car</p>
+                    </div>
+                    <div class="sidebar-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYTP_AG4f4skryRRzU9hPiuxQ7bj4uuvyDf1Sft4Qu9A&s=10" alt="">
+                        <p>Jalen Brunson's MVP-winning performance cements his legacy as the greatest New York Knick of all time</p>
+                    </div>
+                </div>
+                <div class="sidebar-stream">
+    
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQaoAqLTgOnD0SMlRqNZhMMLh6Ex-QrVLEVsPJc5ndSQ&s=10" alt="">
+        <p>Jalen Brunson's MVP-winning performance cements his legacy as the greatest New York Knick of all time</p>
+    </div>
+
+   
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_yQ82TUdwep--ClP3BAFYL6D8_XJbZ_Qa0cVF6h36pA&s=10" alt="">
+        <p>Super Bowl favorites solidify their positions after an aggressive and surprising draft week</p>
+    </div>
+    
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4EER0DMA52K3A_5ZBYeYqTuzwGGu-d9B8__U8ApaxA&s=10" alt="">
+        <p>WNBA attendance hits historic record highs as the highly anticipated rookie class takes over the league</p>
+    </div>
+
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYVEvYB3cy8rQTeiwCY0gGZP0aewIIX_nNpvYHeIfuHg&s=10" alt="">
+        <p>Baseball's latest pitch clock adjustments are producing faster games and a massive surge in stolen bases</p>
+    </div>
+</div>
+<div class="sidebar-stream">
+   
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7XvhDzpZDu2y-tfl4jYUZZwuL139Y-95B1J9KU3sI-w&s=10" alt="">
+        <p>Jalen Brunson's MVP-winning performance cements his legacy as the greatest New York Knick of all time</p>
+    </div>
+
+    
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWo4tGEFA4lyF47krb9bSktI7LDepf3Qa-TY3iCvlMAg&s=10" alt="">
+        <p>Super Bowl favorites solidify their positions after an aggressive and surprising draft week</p>
+    </div>
+    
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDf8rU7dkFpry2tR1UrVSXHGtoQ4isj1HGTUWZNiCr6w&s=10" alt="">
+        <p>WNBA attendance hits historic record highs as the highly anticipated rookie class takes over the league</p>
+    </div>
+
+
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEyUgSfwZk0arSF2hZXRrkX5x_iTCO2htgWzf3W5Vbw&s=10" alt="">
+        <p>Baseball's latest pitch clock adjustments are producing faster games and a massive surge in stolen bases</p>
+    </div>
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyy05x-0PzdgDRlT0n_whPyNN7cC-25AeHerDI-zQi6g&s=10" alt="">
+        <p>Controversy breaks out over VAR decision in the final minutes of the tournament match</p>
+    </div>
+
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDfx7thJLCz1SdH-998UBNqen5MCLJez5PPOA5moOUA&s=10" alt="">
+        <p>Underdog tennis star pulls off a staggering upset against the world No. 1 in straight sets</p>
+    </div>
+
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZ_TLyXLCIcSD31WJ8JWRaFf9lUcG7tGYa7q_NwywEg&s=10" alt="">
+        <p>Formula 1 championship race tightens as unexpected rain throws team strategies into absolute chaos</p>
+    </div>
+
+    <div class="sidebar-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1YwFapgRalVuHVECNmUXXK5e0wB8R9qr6y4OTQrXUfA&s=10" alt="">
+        <p>Golf prodigy breaks record as the youngest player to ever qualify for the prestigious weekend tournament</p>
+    </div>
+</div>
             </aside>
-        </div>
+        </section>
+
+        <section class="more-news-section">
+            <h2 class="section-title">More US sports news</h2>
+            <div class="four-column-grid">
+                <article class="grid-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrWnT5z2aWHvpFqqSBYDJyu8CLm9wlxB9gtwZeiVG6DQ&s" alt="">
+                    <p>James Harden is arrested in Houston on a misdemeanor charge of carrying a weapon in a motor vehicle</p>
+                </article>
+                <article class="grid-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbXyr5uFG7GXutHCB9LkAxrDGFUNt8Mmr11YwXR4YMg&s=10" alt="">
+                    <p>He's playing in the biggest games of his life, but one USA soccer star can't take his eyes off the Knicks</p>
+                </article>
+                <article class="grid-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5QRGbDJa9OM-XlFYyDSruO6WZZuFs4UDDxAEJJTpRfQ&s=10" alt="">
+                    <p>'This wasn't on my Pinterest mood board': NYC weddings overlap with potential Knicks clinch</p>
+                </article>
+                <article class="grid-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZzi4dww6d7-Kts3He4-wJq9QMWAHTB9vVu0uxy0olQ&s=10" alt="">
+                    <p>The Latino duo helping fuel the Knicks' historic NBA Finals run</p>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 

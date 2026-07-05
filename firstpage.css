@@ -1,4 +1,4 @@
-/* --- Core Reset & Variables --- */
+
 :root {
     --cnn-red: #cc0000;
     --dark-grey: #222222;
@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-    /* color: var(--cnn-red); */
+    
     border-bottom:2px solid  #fffefe;
     
 }
